@@ -1,0 +1,252 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 500;
+}
+
+/* Header */
+
+.backgr {
+    background-image: url(images/bg.jpg);
+    height: 690px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: 25% 75%;
+}
+
+#topbar {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    left: 20px;
+}
+
+#navbar ul {
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+	padding: 30px; 
+}
+
+#navtop{
+    color: #fff;
+    list-style-type: none;
+    font-size: 1.3em;
+
+}
+
+#navtop a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top:0;
+    transition: all 0.3s ease-in;
+}
+
+#navtop a:hover, #navtop a:focus {
+	top: -5px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 68px;
+    width: 500px;
+    font-weight: 100;
+    margin-left: 80px;
+    font-family: "Abril Fatface", sans-serif; 
+}
+
+h2 {
+    font-size: 2em;
+    width: 500px;
+    font-weight: 400;
+    margin-left: 60px;
+    font-family: "Abril Fatface", sans-serif; 
+}
+
+.trait
+{
+    margin-top: -30px;
+    margin-left: 45px;
+    width: 50px;
+} 
+
+
+header p {
+    color: #fff;
+    margin-left: 20px;
+    margin-left: 80px;
+}
+
+#section1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 10px 40px 10px;
+}
+
+#flaticons img{
+    width: 50px;
+    filter: invert(95%) sepia(9%) saturate(1680%) hue-rotate(32deg) brightness(87%) contrast(95%);
+    float: top;
+    
+}
+
+#flaticons {
+    text-align: center;
+    width: 150px;
+}
+
+/*Meilleures ventes */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.plante1 {
+    background-image: url(images/nos_meilleures_ventes/1.jpg);
+}
+
+.plante2 {
+    background-image: url(images/nos_meilleures_ventes/2.jpg);
+}
+
+.plante3 {
+    background-image: url(images/nos_meilleures_ventes/3.jpg);
+}
+
+.plante4 {
+    background-image: url(images/nos_meilleures_ventes/4.jpg);
+}
+
+#ventes {
+    margin: 100px;
+}
+
+#boxventes {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 150px;
+    height: 400px;
+    flex: 1;
+}
+
+#plante-prices {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFFDF;
+    padding: 0 10px;
+}
+
+.plante-name {
+    font-weight: 600;    
+    font-size: 22px;
+    line-height: 3px;
+}
+
+.prices {
+    color: #ADD981;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Nos plantes */
+
+#nos-plantes {
+    margin: 100px;
+}
+
+.plantes-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 25% 25% 25% 25%; 
+    height: 900px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.one {
+    background-image: url(images/nos_plantes/1.jpg);
+    grid-area: 1 / 1 / 3 / 3;
+    margin: 5px;
+}
+
+.two {
+    background-image: url(images/nos_plantes/2.jpg);
+    grid-area: 1 / 3 / 1 / 5;
+    margin: 5px;
+}
+
+.three {
+    background-image: url(images/nos_plantes/3.jpg);
+    grid-area: 2 / 3 / 2 / 5;    
+    margin: 5px;
+}
+
+.four {
+    background-image: url(images/nos_plantes/4.jpg);
+    grid-area: 3 / 1 / 5 / 2;
+    margin: 5px;
+}
+
+.five {
+    background-image: url(images/nos_plantes/5.jpg);
+    grid-area: 3 / 2 / 5 / 4;
+    margin: 5px;
+}
+
+.six {
+    background-image: url(images/nos_plantes/6.jpg);
+    grid-area: 3 / 4 / 5 / 5;
+    margin: 5px;
+}
+
+/*
+
+#legendesventes {
+    position: relative;
+    display: flex;
+}
+
+
+*/
